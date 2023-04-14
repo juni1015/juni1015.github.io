@@ -1,22 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <script src="../js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="css/index.css">
-    <script src="js/index.js" defer></script>   <!-- defer : 전체를 로딩하고 script를 읽어라-->
+    <script src="js/index.js" defer></script> <!-- defer : 전체를 로딩하고 script를 읽어라-->
+    <style>
+        body{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-image: url("../images/coding.jpg");
+            background-size: cover;
+            background-position: center center;
+        }
+        .main-container {
+            background-color: black;
+            height: 70px;
+        }
+
+        h1 {
+            color: white;
+            padding: 10px;
+            float: left;
+        }
+        #joinbtn, #loginbtn {
+            margin-top: 15px;
+        }
+
+        /* .imgcontainer {
+            width: 100%;
+            height: 100%;
+            background-color: gray;
+            background-image: url('../images/coding.jpg');
+            background-size: cover;
+            background-position: center center;
+            margin: 0;
+        } */
+        #header{
+            width: 100%;
+            height: 10%;
+            background-color: black;
+            color: white;
+            font-size: 60px;
+            font-weight: 700;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #main{
+            width: 100%;
+            height: 90%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #mainbtn{
+            width: 100px;
+            height: 50px;
+            font-size: 70px;
+            word-spacing: 3px;
+            background-color: white;
+            color: black;
+            font-weight: 700;
+            border: none;
+            border-radius: 10px;
+            background-color: rgba(0, 0, 0, 0.1);
+        }
+    </style>
 </head>
+
 <body>
-    <h2>welcom</h2>
-    <a href="save.html">회원가입</a>
-    <button onclick="goLogin()">로그인</button>
-    <button onclick="fun1()">함수호출</button>
+    <header id="header">
+        <h1 class="col-6">welcom</h1>
+        <div class="main-container">
+            <button id="joinbtn" class="btn btn-outline-light col-3" onclick="goJoin()">회원가입</button>
+            <button id="loginbtn" class="btn btn-outline-light col-2" onclick="goLogin()">로그인</button>
+            <!-- <button onclick="fun1()">함수호출</button> -->
+        </div>
+    </header>
+    
+    
+    <main id="main">
+        <div class="imgcontainer">
+            <button id="mainbtn" class="btn-outline-dark col-3">click</button>
+        </div>
+    </main>
 </body>
 <script>
     const goLogin = () => {
         location.href = "login.html";
     }
+    const goJoin = () => {
+        location.href = "join.html";
+    }
 </script>
+
 </html>
