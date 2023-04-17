@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 * {
     width: 100%;
@@ -87,4 +88,11 @@
         opacity: 3;
         transform: none;
     }
+=======
+body {
+    margin: 0;
+}
+a {
+    text-decoration: none;
+>>>>>>> d8ca3fcb5b449887fc910c1b34c1b9d12d9a80b2
 }
