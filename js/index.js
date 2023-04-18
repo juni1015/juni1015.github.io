@@ -3,7 +3,8 @@ const goLogin = () => {
     window.open("login.html", "_blank");
 };
 const goJoin = () => {
-    location.href = "join.html";
+    // location.href = "join.html";
+    window.open("join.html", "_blank");
 };
 const portfolio = () => {
     const ele = document.getElementById("container");

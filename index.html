@@ -5,20 +5,97 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="css/index.css">
-    <script src="js/index.js" defer></script>   <!-- defer : 전체를 로딩하고 script를 읽어라-->
+    <title>juni world</title>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="css/index.css" />
+    <script src="js/index.js" defer></script>
+    <!-- defer : 전체를 로딩하고 script를 읽어라-->
 </head>
 
 <body>
-    <h2>welcom</h2>
-    <a href="save.html">회원가입</a>
-    <button onclick="goLogin()">로그인</button>
-    <button onclick="fun1()">함수호출</button>
+    <header id="header">
+        <h1 class="col-7">Hello World</h1>
+        <button id="joinbtn" class="btn btn-outline-light col-3" onclick="goJoin()">
+            회원가입
+        </button>
+        <button id="loginbtn" class="btn btn-outline-light col-2" onclick="goLogin()">
+            로그인
+        </button>
+    </header>
+
+    <main id="main">
+        <div class="imgcontainer">
+            <button id="mainbtn" class="btn btn-light" onclick="portfolio()">portfolio</a></button>
+        </div>
+    </main>
+    <div class="container" id="container">
+        <div id="container1" class="container mt-5">
+            <h2>My Portfolio</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card mb-4 shadow">
+                        <img src="../images/join.png" class="card-img-top" alt="Project 1" />
+                        <div class="card-body">
+                            <h5 class="card-title">회원가입기능</h5>
+                            <button id="joinbtn" class="btn btn-outline-dark" onclick="goJoin()">
+                                보러가기
+                            </button>
+                            <!-- <p class="card-text">첫번째 프로젝트로 만들었습니다</p> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4 shadow">
+                        <img src="../images/coding.jpg" class="card-img-top" alt="Project 2" />
+                        <div class="card-body">
+                            <h5 class="card-title">Project 2</h5>
+                            <p class="card-text">Project 2 description goes here.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4 shadow">
+                        <img src="../images/coding.jpg" class="card-img-top" alt="Project 3" />
+                        <div class="card-body">
+                            <h5 class="card-title">Project 3</h5>
+                            <p class="card-text">Project 3 description goes here.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container mt-3">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card mb-4 shadow">
+                        <img src="../images/coding.jpg" class="card-img-top" alt="Project 1" />
+                        <div class="card-body">
+                            <h5 class="card-title">Project 4</h5>
+                            <p class="card-text">첫번째 프로젝트로 만들었습니다</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4 shadow">
+                        <img src="../images/coding.jpg" class="card-img-top" alt="Project 2" />
+                        <div class="card-body">
+                            <h5 class="card-title">Project 5</h5>
+                            <p class="card-text">Project 2 description goes here.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4 shadow">
+                        <img src="../images/coding.jpg" class="card-img-top" alt="Project 3" />
+                        <div class="card-body">
+                            <h5 class="card-title">Project 6</h5>
+                            <p class="card-text">Project 3 description goes here.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
-<script>
-    const goLogin = () => {
-        location.href = "login.html";
-    }
-</script>
 </html>
